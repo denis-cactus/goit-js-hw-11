@@ -36,6 +36,9 @@ searchForm.addEventListener('submit', event => {
           messageColor: '#fafafb',
           position: 'topRight',
           iconUrl: '../img/error.svg',
+          transitionIn: 'fadeInLeft',
+          transitionOut: 'fadeOutUp',
+          timeout: 10000,
         });
       } else {
         renderImages(images);
