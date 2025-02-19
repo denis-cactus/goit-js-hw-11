@@ -21,6 +21,8 @@ searchForm.addEventListener('submit', event => {
       position: 'topRight',
       backgroundColor: '#ef4040',
       messageColor: '#fafafb',
+      transitionIn: 'fadeInLeft',
+      transitionOut: 'fadeOutUp',
     });
     return;
   }
@@ -38,10 +40,9 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: './img/error.svg',
+          iconUrl: './src/img/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
-          timeout: 2000,
         });
       } else {
         renderImages(images);

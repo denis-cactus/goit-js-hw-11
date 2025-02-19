@@ -1,6 +1,6 @@
 .iziToast {
-  margin-top: 36px !important;
-  margin-right: 36px !important;
+  margin-top: 26px !important;
+  margin-right: 26px !important;
   max-width: 432px !important;
   max-height: 88px !important;
 }
@@ -14,6 +14,5 @@
 }
 .iziToast-close {
   filter: brightness(0) invert(1);
-  transform: scale(1.5);
 }
 
