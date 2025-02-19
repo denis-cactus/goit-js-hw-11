@@ -40,7 +40,7 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: '/img/error.svg',
+          iconUrl: '/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
         });
