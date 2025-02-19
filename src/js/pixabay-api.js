@@ -23,7 +23,7 @@ export const fetchImages = query => {
       iziToast.error({
         title: 'Error',
         message:
-          'Sorry, there are no images matching \n your search query. Please try again!',
+          'Sorry, there are no images matching your search query. Please try again!',
       });
       return [];
     });
