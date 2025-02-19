@@ -38,7 +38,7 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: '/img/error.svg',
+          iconUrl: './img/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
           timeout: 2000,
