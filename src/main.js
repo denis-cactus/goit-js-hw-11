@@ -1,7 +1,6 @@
 import { fetchImages } from './js/pixabay-api.js'; // for request
 import { renderImages } from './js/render-functions.js'; // for images
 import iziToast from 'izitoast'; // for message
-
 import 'izitoast/dist/css/iziToast.min.css';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -19,7 +18,7 @@ searchForm.addEventListener('submit', event => {
       title: '',
       message: 'Please enter a search term!',
       position: 'topRight',
-      iconUrl: '/img/error.svg',
+      iconUrl: '/icon/error.svg',
       backgroundColor: '#ef4040',
       messageColor: '#fafafb',
       transitionIn: 'fadeInLeft',
@@ -41,7 +40,7 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: '/img/error.svg',
+          iconUrl: '/icon/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
         });
