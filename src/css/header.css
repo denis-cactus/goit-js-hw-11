@@ -56,14 +56,17 @@ button:hover {
 
 .image-card {
   width: 360px;
-  height: 248px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  /*border-radius: 10px;*/
+  border: 1px solid #808080;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform .25s ease-in-out;
 }
-
+.image-card:hover {
+  transform: scale(1.1);
+}
 .image-card img {
   width: 100%;
   height: 200px;
