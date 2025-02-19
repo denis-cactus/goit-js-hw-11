@@ -19,6 +19,7 @@ searchForm.addEventListener('submit', event => {
       title: '',
       message: 'Please enter a search term!',
       position: 'topRight',
+      iconUrl: '/img/error.svg',
       backgroundColor: '#ef4040',
       messageColor: '#fafafb',
       transitionIn: 'fadeInLeft',
@@ -40,7 +41,7 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: './img/error.svg',
+          iconUrl: '/img/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
         });
