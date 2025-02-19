@@ -1,6 +1,6 @@
-import { fetchImages } from './js/pixabay-api.js'; // для запитів
-import { renderImages } from './js/render-functions.js'; // для відображення зображень
-import iziToast from 'izitoast'; // для повідомлень
+import { fetchImages } from './js/pixabay-api.js'; // for request
+import { renderImages } from './js/render-functions.js'; // for images
+import iziToast from 'izitoast'; // for message
 
 import 'izitoast/dist/css/iziToast.min.css';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -16,8 +16,11 @@ searchForm.addEventListener('submit', event => {
   const query = searchInput.value.trim();
   if (!query) {
     iziToast.error({
-      title: 'Error',
+      title: '',
       message: 'Please enter a search term!',
+      position: 'topRight',
+      backgroundColor: '#ef4040',
+      messageColor: '#fafafb',
     });
     return;
   }
@@ -35,10 +38,10 @@ searchForm.addEventListener('submit', event => {
           backgroundColor: '#ef4040',
           messageColor: '#fafafb',
           position: 'topRight',
-          iconUrl: '../img/error.svg',
+          iconUrl: '/img/error.svg',
           transitionIn: 'fadeInLeft',
           transitionOut: 'fadeOutUp',
-          timeout: 10000,
+          timeout: 2000,
         });
       } else {
         renderImages(images);

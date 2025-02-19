@@ -16,7 +16,7 @@ export const fetchImages = query => {
       },
     })
     .then(response => {
-      return response.data.hits; // це масив зображень
+      return response.data.hits;
     })
     .catch(error => {
       console.error(error);
